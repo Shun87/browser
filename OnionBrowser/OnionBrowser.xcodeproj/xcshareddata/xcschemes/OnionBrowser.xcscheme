@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "696EBD7214F7877900B81BC9"
-               BuildableName = "OnionBrowser.app"
+               BuildableName = "Tor Browser.app"
                BlueprintName = "OnionBrowser"
                ReferencedContainer = "container:OnionBrowser.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "696EBD7214F7877900B81BC9"
-            BuildableName = "OnionBrowser.app"
+            BuildableName = "Tor Browser.app"
             BlueprintName = "OnionBrowser"
             ReferencedContainer = "container:OnionBrowser.xcodeproj">
          </BuildableReference>
@@ -58,11 +58,12 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "696EBD7214F7877900B81BC9"
-            BuildableName = "OnionBrowser.app"
+            BuildableName = "Tor Browser.app"
             BlueprintName = "OnionBrowser"
             ReferencedContainer = "container:OnionBrowser.xcodeproj">
          </BuildableReference>
@@ -76,11 +77,12 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "696EBD7214F7877900B81BC9"
-            BuildableName = "OnionBrowser.app"
+            BuildableName = "Tor Browser.app"
             BlueprintName = "OnionBrowser"
             ReferencedContainer = "container:OnionBrowser.xcodeproj">
          </BuildableReference>

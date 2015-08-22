@@ -22,10 +22,10 @@
 ###########################################################################
 # Choose your tor version and your currently-installed iOS SDK version:
 #
-VERSION="0.2.4.22"
+VERSION=0.2.5.10
 #VERSION="0.2.5.2-alpha"
-USERSDKVERSION="7.1"
-MINIOSVERSION="6.0"
+USERSDKVERSION=8.4
+MINIOSVERSION=7.1
 VERIFYGPG=false
 
 ###########################################################################
@@ -84,11 +84,6 @@ cd $SRCDIR
 # Exit the script if an error happens
 set -e
 
-if [ ! -e "${SRCDIR}/tor-${VERSION}.tar.gz" ]; then
-	echo "Downloading tor-${VERSION}.tar.gz"
-	#curl -O https://archive.torproject.org/tor-package-archive/tor-${VERSION}.tar.gz
-	curl -O https://www.torproject.org/dist/tor-${VERSION}.tar.gz
-fi
 echo "Using tor-${VERSION}.tar.gz"
 
 # see https://www.torproject.org/docs/verifying-signatures.html.en
@@ -197,7 +192,7 @@ do
 	--with-openssl-dir="${OUTPUTDIR}" \
 	--with-libevent-dir="${OUTPUTDIR}" \
 	--with-zlib-dir="${OUTPUTDIR}" \
-	--disable-asciidoc --disable-transparent --disable-threads \
+	--disable-asciidoc --disable-transparent --disable-threads --disable-tool-name-check\
 	LDFLAGS="$LDFLAGS -L${OUTPUTDIR}/lib" \
 	CFLAGS="$CFLAGS -O2 -I${OUTPUTDIR}/include -isysroot ${DEVELOPER}/Platforms/${PLATFORM}.platform/Developer/SDKs/${PLATFORM}${SDKVERSION}.sdk" \
 	CPPFLAGS="$CPPFLAGS -I${OUTPUTDIR}/include -isysroot ${DEVELOPER}/Platforms/${PLATFORM}.platform/Developer/SDKs/${PLATFORM}${SDKVERSION}.sdk" 
